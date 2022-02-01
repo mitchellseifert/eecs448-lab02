@@ -39,15 +39,15 @@ bool LinkedList<T>::search(T value) const
 	Node<T>* temp = m_front;
 	bool isFound = false;
 
-	while(temp!=null){
-		if(temp-> m_value==value)
+	while(temp!=NULL){
+		if(temp->getValue()==value)
 		{
-			return(true);
+			return(isFound);
 		}
-		temp=temp->m_next;
+		temp=temp->getNext();
 	}
 	return(false);
-	return(isFound);
+	
 }
 
 template <typename T>
